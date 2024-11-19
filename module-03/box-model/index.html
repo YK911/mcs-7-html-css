@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Box model</title>
+    <style>
+      html {
+        box-sizing: border-box;
+      }
+
+      *,
+      *::before,
+      *::after {
+        box-sizing: inherit;
+      }
+      .section {
+        outline: 2px solid red;
+        outline-offset: -2px;
+        padding: 40px 0;
+        background-color: lightblue;
+      }
+
+      .text {
+        background-color: slateblue;
+        color: white;
+
+        /* box-sizing: content-box; */
+        /* box-sizing: border-box; */
+        width: 600px;
+        padding: 50px 20px;
+        /* padding: 40px 60px; */
+        /* padding: 40px 60px 50px; */
+        /* padding: 20px 40px 60px 80px; */
+        /* padding: 10% 20%; */
+
+        /* margin: 20px auto; */
+        margin: 0 auto;
+        /* margin-bottom: 50px; */
+
+        margin-left: auto;
+        margin-right: auto;
+
+        /* Shorthand properties */
+        /* border: 10px dashed lightgreen; */
+        /* border-left-style: solid; */
+        /* border-right: 10px dotted lightseagreen; */
+
+        /* border-top-width: 10px;
+        border-right-width: 10px;
+        border-bottom-width: 10px;
+        border-left-width: 10px;
+
+        border-width: 10px;
+        border-style: dashed;
+        border-color: lightgreen; */
+        /* border-radius: 30px 120px; */
+      }
+      .video-wrapper {
+        position: relative;
+        width: 70vw;
+        background-image: linear-gradient(blueviolet, hotpink);
+        border-radius: 30px;
+        overflow: hidden;
+      }
+      .video-wrapper::before {
+        content: '';
+        padding-top: 56.25%;
+        display: block;
+      }
+      .yt-video {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+      }
+
+      .circle {
+        width: 500px;
+        height: 500px;
+
+        outline: 2px solid red;
+        outline-offset: 2px;
+
+        background-image: linear-gradient(hotpink, slateblue);
+        /* border-radius: 50%; */
+      }
+      .circle > h1 {
+        margin: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <section class="section">
+      <p class="text">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure odit eius
+        debitis asperiores veniam dolorem perspiciatis ratione nihil laudantium
+        rem quidem consectetur eos aliquid, perferendis saepe reiciendis quaerat
+        quo ducimus.
+      </p>
+    </section>
+
+    <!-- <div class="circle">
+      <h1>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus
+        perspiciatis, ut deleniti odio temporibus modi provident rerum, minima
+        neque voluptas vitae ipsa voluptatem optio et earum reprehenderit
+        recusandae ratione quaerat deserunt aliquid iusto pariatur magni quasi
+        minus. Atque, quo harum reiciendis
+      </h1>
+    </div> -->
+    <!-- <div class="video-wrapper">
+      <iframe
+        class="yt-video"
+        src="https://www.youtube.com/embed/oRDRfikj2z8?si=EzTr6ijX54CIaD-S"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen
+      ></iframe>
+    </div> -->
+  </body>
+</html>
