@@ -1,0 +1,103 @@
+/* #region Basics */
+.container {
+  width: clamp(320px, 86%, 1200px);
+  padding: 0 15px;
+  margin: 0 auto;
+}
+.wrapper {
+  width: 100%;
+  /* min-height: 600px; */
+  padding: 20px;
+  margin: 0 auto;
+  margin-top: 60px;
+
+  list-style-type: none;
+  border-radius: 10px;
+  background-color: lightgreen;
+  outline: 5px solid rgb(75, 167, 75);
+  outline-offset: -5px;
+  padding: 0;
+}
+
+.item {
+  width: 150px;
+  height: 150px;
+  font-size: 64px;
+  line-height: 150px;
+  color: white;
+  text-align: center;
+  border-radius: 10px;
+  background-color: slateblue;
+  outline: 5px solid rgb(45, 35, 125);
+  outline-offset: -5px;
+}
+.btn {
+  display: inline-flex;
+
+  min-width: 220px;
+  min-height: 80px;
+  padding: 20px 40px;
+  border-radius: 20px;
+  border: 1px solid blueviolet;
+  color: blueviolet;
+  background-color: transparent;
+
+  .icon {
+    font-style: normal;
+    font-size: 28px;
+  }
+}
+/* #endregion */
+
+/* #region Flexbox */
+:root {
+  /* Base gird params */
+  --items: 3;
+  --indent-col: 44px;
+  --indent-row: var(--indent-col);
+}
+.wrapper {
+  display: flex;
+  /* justify-content: space-between; */
+  flex-wrap: wrap;
+  column-gap: var(--indent-col);
+  row-gap: var(--indent-row);
+
+  /* Default properties */
+  /* flex-direction: row; */
+  /* justify-content: flex-start; */
+  /* align-items: stretch; */
+  /* flex-wrap: nowrap; */
+}
+.item {
+  width: calc((100% - var(--indent-col) * (var(--items) - 1)) / var(--items));
+}
+/* #endregion */
+
+/* Reviews 5 items per row | indent = 10px */
+.reviews {
+  --items: 5;
+  --indent-col: 10px;
+  --indent-row: 50px;
+}
+/* .reviews {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.reviews .item {
+  width: calc((100% - 10px * 4) / 5);
+} */
+/* Products 2 items per row | indent = 30px */
+.products {
+  --items: 2;
+  --indent-col: 30px;
+}
+/* .products {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.products .item {
+  width: calc((100% - 30px * 1) / 2);
+} */
