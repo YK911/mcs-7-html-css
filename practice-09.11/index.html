@@ -4,7 +4,19 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Minimal</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
   </head>
+
   <body>
     <header class="header">
       <div class="container">
@@ -42,18 +54,20 @@
     </header>
 
     <main>
-      <section class="hero">
-        <div class="container hero">
+      <section class="hero section">
+        <div class="container hero-container">
           <h1 class="hero-title">Modern and minimalist furniture for you</h1>
-          <p class="hero-desrciption">
-            Add a touch of elegance to your space with handcrafted furniture
-            pieces
-          </p>
-          <button class="hero-button">Subscribe</button>
+          <div class="hero-button-box">
+            <p class="hero-desrciption">
+              Add a touch of elegance to your space with handcrafted furniture
+              pieces
+            </p>
+            <button class="btn hero-button">Subscribe</button>
+          </div>
         </div>
       </section>
 
-      <section class="about">
+      <section class="about section">
         <div class="container">
           <h2 class="about-title">About us</h2>
           <h3 class="about-subtitle">
@@ -88,7 +102,8 @@
           </ul>
         </div>
       </section>
-      <section class="price">
+
+      <section class="price section">
         <div class="container">
           <h2 hidden="hidden">Price-info</h2>
           <ul class="price-list">
@@ -111,7 +126,8 @@
           </ul>
         </div>
       </section>
-      <section class="products">
+
+      <section class="products section">
         <div class="container">
           <h2 class="products-title">OUR PRODUCTS</h2>
           <ul class="products-list">
