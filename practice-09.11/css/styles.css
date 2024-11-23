@@ -1,0 +1,148 @@
+/* #region Common */
+
+:root {
+  /* Colors */
+  --cl-blue-font: #0a224a;
+  --cl-white: #fff;
+  --cl-dark-grey: #b6b6b6;
+  --cl-light-blue: #f7faff;
+  --cl-gray: #d9d9d9;
+  --cl-light-gray: #7a7a7a;
+
+  /* Fonts */
+  --primary-font: 'Roboto', sans-serif;
+  --secondary-font: 'Playfair Display', serif;
+}
+
+body {
+  font-family: var(--primary-font);
+  font-size: 18px;
+  line-height: 1.5;
+  color: var(--cl-blue-font);
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+  border: 1px solid transparent;
+}
+
+.section {
+  padding: 50px 0;
+}
+
+.container {
+  max-width: 1344px;
+  padding: 0 12px;
+  margin: 0 auto;
+}
+
+.btn {
+  min-width: 224px;
+  min-height: 50px;
+  padding: 17px 65px;
+
+  color: var(--cl-white);
+  background-color: var(--cl-blue-font);
+}
+
+/* #endregion */
+
+/* #region Heder */
+
+.header {
+  padding: 26px 0;
+
+  background-color: var(--cl-light-blue);
+}
+
+.header-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+}
+.header-nav-list {
+  display: flex;
+  gap: 30px;
+}
+.header-nav-item {
+}
+.header-nav-link {
+  padding: 8px 0;
+}
+
+.header-nav-link:hover {
+  text-decoration: underline;
+}
+
+/* #endregion */
+
+/* #region Hero */
+
+.hero {
+  padding-top: 64px;
+}
+
+.hero-container {
+  display: flex;
+  flex-direction: column;
+
+  gap: 246px;
+
+  background-image: url(../images/hero/bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-clip: content-box;
+}
+
+.hero-title {
+  max-width: 648px;
+
+  font-family: var(--secondary-font);
+  font-size: 50px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+.hero-button-box {
+  align-self: end;
+
+  width: 312px;
+}
+
+.hero-desrciption {
+  margin-bottom: 30px;
+}
+.hero-button {
+}
+
+/* #endregion */
