@@ -25,6 +25,9 @@
 
   /* Transitions */
   --fast-trns: 300ms ease;
+
+  /* Animations */
+  --base-delay: 800ms;
 }
 
 body {
@@ -37,6 +40,35 @@ body {
   /* Pattern image */
   /* background-image: url('data:image/svg+xml,%3Csvg width="42" height="44" viewBox="0 0 42 44" xmlns="http://www.w3.org/2000/svg"%3E%3Cg id="Page-1" fill="none" fill-rule="evenodd"%3E%3Cg id="brick-wall" fill="%239C92AC" fill-opacity="0.4"%3E%3Cpath d="M0 0h42v44H0V0zm1 1h40v20H1V1zM0 23h20v20H0V23zm22 0h20v20H22V23z"/%3E%3C/g%3E%3C/g%3E%3C/svg%3E'); */
 }
+
+/* #region Animations */
+@keyframes move-vertical {
+  0% {
+    opacity: 0;
+    transform: translateY(-100px);
+  }
+  60% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes move-horizontal {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  60% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+/* #endregion */
 
 /* #region Base */
 /* Reset */
@@ -145,6 +177,11 @@ img {
 
   transition: var(--fast-trns);
   transition-property: background-color, color, border-color;
+}
+.btn-accent,
+.btn-primary {
+  animation: move-horizontal 600ms ease calc(var(--base-delay) * var(--coef))
+    both;
 }
 .btn-accent {
   background-color: rgb(var(--cl-accent));
@@ -319,6 +356,8 @@ img {
   line-height: 1.21;
   letter-spacing: -0.03em;
   color: rgb(var(--cl-white));
+
+  animation: move-vertical 800ms ease-in var(--base-delay) both;
 }
 .hero-wrapper {
   display: flex;
@@ -720,16 +759,11 @@ img {
 
 /* #region Modal window */
 .backdrop {
-  display: none;
   position: fixed;
   inset: 0;
   z-index: var(--backdrop-depth);
-  /* top: 0;
-  left: 0; */
 
-  /* width: 100%;
-  height: 100%; */
-  background-color: rgba(6, 0, 128, 0.447);
+  background-color: rgba(35, 35, 35, 0.447);
 }
 .modal {
   position: absolute;
