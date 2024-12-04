@@ -17,3 +17,20 @@
 - Теги `select` та `optgroup`
 - Тег `datalist`
 - Тег `fieldset`
+
+# План заняття (05.12.2024):
+
+- Оформлення стану елементів форми
+- Атрибути валідації:
+  - `required`
+  - `minlength || maxlength`
+  - `min || max`
+- Псевдокласи стану:
+  - `:enabled || :disabled`
+  - `:checked`
+  - `:in-range || :out-of-range`
+  - `:required || :optional`
+  - `:valid || :invalid`
+- Псевдоелемент `::placeholder` і псевдоклас `:placeholder-shown`
+- Комбінування псевдокласів
+- Псевдоклас `:focus-within`
