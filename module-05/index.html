@@ -722,146 +722,111 @@
     <!-- Modal window -->
     <div class="backdrop">
       <div class="modal">
-        <button type="button">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="28"
-            height="28"
-            viewBox="0 0 28 28"
-            fill="none"
-          >
-            <path
-              d="M21 7L7 21"
-              stroke="#111111"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            />
-            <path
-              d="M7 7L21 21"
-              stroke="#111111"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            />
+        <button class="modal-btn" type="button">
+          <svg class="modal-btn-icon" width="28" height="28">
+            <use href="./images/icons.svg#close"></use>
           </svg>
         </button>
-        <p>LEAVE A REVIEW ABOUT <span>OUR CHOCOLATE</span></p>
+        <p class="modal-caption">
+          LEAVE A REVIEW ABOUT <span class="accent-text">OUR CHOCOLATE</span>
+        </p>
 
-        <form class="modal-form" name="reviewForm">
+        <form class="modal-form" name="review-form">
           <div class="modal-form-field">
-            <label class="modal-form-label" for=""> Name </label>
+            <label class="modal-form-label" for="user-name"> Name </label>
             <div class="modal-form-wrapper">
-              <input class="modal-form-input" type="text" />
-              <svg
-                class="modal-form-icon"
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-              >
-                <path
-                  d="M20 21V19C20 17.9391 19.5786 16.9217 18.8284 16.1716C18.0783 15.4214 17.0609 15 16 15H8C6.93913 15 5.92172 15.4214 5.17157 16.1716C4.42143 16.9217 4 17.9391 4 19V21"
-                  stroke="#FD9222"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-                <path
-                  d="M12 11C14.2091 11 16 9.20914 16 7C16 4.79086 14.2091 3 12 3C9.79086 3 8 4.79086 8 7C8 9.20914 9.79086 11 12 11Z"
-                  stroke="#FD9222"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
+              <input
+                class="modal-form-input"
+                type="text"
+                id="user-name"
+                name="user-name"
+                minlength="3"
+                placeholder=" "
+                required
+              />
+              <svg class="modal-form-icon" width="24" height="24">
+                <use href="./images/icons.svg#user"></use>
+              </svg>
+              <svg class="notification-icon" width="24" height="24">
+                <use class="error" href="./images/icons.svg#error"></use>
+                <use class="success" href="./images/icons.svg#success"></use>
               </svg>
             </div>
           </div>
 
           <div class="modal-form-field">
-            <label class="modal-form-label" for=""> Email </label>
+            <label class="modal-form-label" for="user-email"> Email </label>
             <div class="modal-form-wrapper">
-              <input class="modal-form-input" type="email" name="" id="" />
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-              >
-                <path
-                  d="M4 4H20C21.1 4 22 4.9 22 6V18C22 19.1 21.1 20 20 20H4C2.9 20 2 19.1 2 18V6C2 4.9 2.9 4 4 4Z"
-                  stroke="#404040"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-                <path
-                  d="M22 6L12 13L2 6"
-                  stroke="#404040"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
+              <input
+                class="modal-form-input"
+                type="email"
+                name="user-email"
+                id="user-email"
+                placeholder=" "
+                required
+              />
+              <svg class="modal-form-icon" width="24" height="24">
+                <use href="./images/icons.svg#email"></use>
               </svg>
             </div>
           </div>
 
           <div class="modal-form-field">
-            <label class="modal-form-label" for=""> Phone number </label>
+            <label class="modal-form-label" for="user-phone">
+              Phone number
+            </label>
             <div class="modal-form-wrapper">
-              <input class="modal-form-input" type="tel" name="" id="" />
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-              >
-                <path
-                  d="M22.0001 16.9201V19.9201C22.0012 20.1986 21.9441 20.4743 21.8326 20.7294C21.721 20.9846 21.5574 21.2137 21.3521 21.402C21.1469 21.5902 20.9046 21.7336 20.6408 21.8228C20.377 21.912 20.0974 21.9452 19.8201 21.9201C16.7429 21.5857 13.7871 20.5342 11.1901 18.8501C8.77388 17.3148 6.72539 15.2663 5.19006 12.8501C3.50003 10.2413 2.4483 7.27109 2.12006 4.1801C2.09507 3.90356 2.12793 3.62486 2.21656 3.36172C2.30518 3.09859 2.44763 2.85679 2.63482 2.65172C2.82202 2.44665 3.04986 2.28281 3.30385 2.17062C3.55783 2.05843 3.8324 2.00036 4.11006 2.0001H7.11006C7.59536 1.99532 8.06585 2.16718 8.43382 2.48363C8.80179 2.80008 9.04213 3.23954 9.11005 3.7201C9.23668 4.68016 9.47151 5.62282 9.81006 6.5301C9.9446 6.88802 9.97372 7.27701 9.89396 7.65098C9.81421 8.02494 9.62892 8.36821 9.36005 8.6401L8.09006 9.9101C9.51361 12.4136 11.5865 14.4865 14.0901 15.9101L15.3601 14.6401C15.6319 14.3712 15.9752 14.1859 16.3492 14.1062C16.7231 14.0264 17.1121 14.0556 17.4701 14.1901C18.3773 14.5286 19.32 14.7635 20.2801 14.8901C20.7658 14.9586 21.2095 15.2033 21.5266 15.5776C21.8437 15.9519 22.0122 16.4297 22.0001 16.9201Z"
-                  stroke="#404040"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
+              <input
+                class="modal-form-input"
+                type="tel"
+                name="user-phone"
+                id="user-phone"
+                placeholder="+38 (099) 123 45 67"
+                pattern="\+38 \(0\d{2}\) \d{3} \d{2} \d{2}"
+                title="Please follow next format +38 (099) 123 45 67"
+              />
+              <svg class="modal-form-icon" width="24" height="24">
+                <use href="./images/icons.svg#phone"></use>
               </svg>
             </div>
           </div>
 
           <div class="modal-form-field">
-            <label for="">Comment</label>
-            <textarea name="" id=""></textarea>
+            <label class="modal-form-label" for="user-comment">Comment</label>
+            <textarea
+              class="modal-form-message"
+              name="user-comment"
+              id="user-comment"
+              placeholder="Enter text"
+              required
+              minlength="10"
+              maxlength="1000"
+            ></textarea>
           </div>
 
           <div class="modal-form-agreement">
-            <input class="" type="checkbox" name="" id="user-agreement" />
+            <input
+              class="visually-hidden"
+              type="checkbox"
+              name="user-agreement"
+              id="user-agreement"
+              value="true"
+              checked
+            />
             <label class="modal-form-agreement-desc" for="user-agreement">
-              <span
-                class="modal-form-checkbox"
-                style="
-                  display: flex;
-                  width: 40px;
-                  height: 40px;
-                  border: 2px solid gray;
-                "
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="10"
-                  height="10"
-                  viewBox="0 0 10 10"
-                  fill="none"
-                >
-                  <path
-                    d="M3.94874 9.75416C4.38459 9.75416 4.71409 9.58679 4.93724 9.25207L9.76464 1.97696C9.84484 1.85841 9.90411 1.7416 9.94247 1.62654C9.98082 1.50799 10 1.39467 10 1.28658C10 0.986723 9.8954 0.739164 9.68619 0.543906C9.48047 0.345161 9.22594 0.245789 8.92259 0.245789C8.71339 0.245789 8.53556 0.28763 8.38912 0.371312C8.24616 0.451507 8.11018 0.590977 7.98117 0.789722L3.92782 7.15478L1.89854 4.72278C1.67887 4.46824 1.40342 4.34098 1.07218 4.34098C0.761855 4.34098 0.505579 4.44035 0.303347 4.63909C0.101116 4.83784 0 5.08714 0 5.387C0 5.52299 0.0209205 5.652 0.0627615 5.77403C0.108089 5.89258 0.190028 6.01636 0.308577 6.14537L3.00209 9.32006C3.24965 9.60946 3.5652 9.75416 3.94874 9.75416Z"
-                    fill="white"
-                  />
+              <!-- <input class="custom-checkbox" type="checkbox" name="agreement" /> -->
+              <span class="modal-form-checkbox">
+                <svg class="modal-form-checkbox-icon" width="10" height="10">
+                  <use href="./images/icons.svg#checkmark"></use>
                 </svg>
               </span>
               I accept the terms and conditions of the
-              <a href="" target="_blank" rel="noopener noreferrer">
+              <a
+                class="modal-form-agreement-link"
+                href=""
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 Privacy Policy
               </a>
             </label>
