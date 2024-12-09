@@ -1,0 +1,31 @@
+:root {
+  scroll-behavior: smooth;
+
+  --primary-font: 'Montserrat', sans-serif;
+  --secondary-font: 'Roboto', sans-serif;
+
+  /* Colors */
+  --cl-body: 250 250 250;
+  --cl-primary: 17 17 17;
+  --cl-secondary: 76 76 76;
+  --cl-accent: 253 146 34;
+  --cl-light: 250 250 250;
+  --cl-dark: 30 24 35;
+  --cl-white: 255 255 255;
+  --cl-beige: 252 241 224;
+
+  /* Others */
+  --indent-col: 32px;
+  --indent-row: var(--indent-col);
+  --items: 3;
+
+  /* Position */
+  --header-depth: 1;
+  --backdrop-depth: 2;
+
+  /* Transitions */
+  --fast-trns: 300ms ease;
+
+  /* Animations */
+  --base-delay: 800ms;
+}

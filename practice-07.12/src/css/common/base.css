@@ -1,0 +1,53 @@
+body {
+  font-family: var(--primary-font);
+  color: rgb(var(--cl-body));
+  font-size: 14px;
+  color: rgb(var(--cl-primary));
+  background-color: rgb(var(--cl-body));
+}
+/* Reset */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+ul,
+ol {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+a {
+  text-decoration: none;
+  color: currentColor;
+}
+button {
+  font-family: inherit;
+  cursor: pointer;
+}
+address {
+  font-style: normal;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.section {
+  padding: 60px 0;
+}
+.section-title {
+  width: 412px;
+  margin: 0 auto 50px;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.17;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  text-align: center;
+}

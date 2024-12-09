@@ -1,0 +1,105 @@
+<p class="modal-caption">
+  LEAVE A REVIEW ABOUT <span class="accent-text">OUR CHOCOLATE</span>
+</p>
+
+<form class="modal-form" name="review-form">
+  <div class="modal-form-field">
+    <label class="modal-form-label" for="user-name"> Name </label>
+    <div class="modal-form-wrapper">
+      <input
+        class="modal-form-input"
+        type="text"
+        id="user-name"
+        name="user-name"
+        minlength="3"
+        placeholder=" "
+        required
+      />
+      <svg class="modal-form-icon" width="24" height="24">
+        <use href="./images/icons.svg#user"></use>
+      </svg>
+      <svg class="notification-icon" width="24" height="24">
+        <use class="error" href="./images/icons.svg#error"></use>
+        <use class="success" href="./images/icons.svg#success"></use>
+      </svg>
+    </div>
+  </div>
+
+  <div class="modal-form-field">
+    <label class="modal-form-label" for="user-email"> Email </label>
+    <div class="modal-form-wrapper">
+      <input
+        class="modal-form-input"
+        type="email"
+        name="user-email"
+        id="user-email"
+        placeholder=" "
+        required
+      />
+      <svg class="modal-form-icon" width="24" height="24">
+        <use href="./images/icons.svg#email"></use>
+      </svg>
+    </div>
+  </div>
+
+  <div class="modal-form-field">
+    <label class="modal-form-label" for="user-phone"> Phone number </label>
+    <div class="modal-form-wrapper">
+      <input
+        class="modal-form-input"
+        type="tel"
+        name="user-phone"
+        id="user-phone"
+        placeholder="+38 (099) 123 45 67"
+        pattern="\+38 \(0\d{2}\) \d{3} \d{2} \d{2}"
+        title="Please follow next format +38 (099) 123 45 67"
+      />
+      <svg class="modal-form-icon" width="24" height="24">
+        <use href="./images/icons.svg#phone"></use>
+      </svg>
+    </div>
+  </div>
+
+  <div class="modal-form-field">
+    <label class="modal-form-label" for="user-comment">Comment</label>
+    <textarea
+      class="modal-form-message"
+      name="user-comment"
+      id="user-comment"
+      placeholder="Enter text"
+      required
+      minlength="10"
+      maxlength="1000"
+    ></textarea>
+  </div>
+
+  <div class="modal-form-agreement">
+    <input
+      class="visually-hidden"
+      type="checkbox"
+      name="user-agreement"
+      id="user-agreement"
+      value="true"
+      checked
+    />
+    <label class="modal-form-agreement-desc" for="user-agreement">
+      <!-- <input class="custom-checkbox" type="checkbox" name="agreement" /> -->
+      <span class="modal-form-checkbox">
+        <svg class="modal-form-checkbox-icon" width="10" height="10">
+          <use href="./images/icons.svg#checkmark"></use>
+        </svg>
+      </span>
+      I accept the terms and conditions of the
+      <a
+        class="modal-form-agreement-link"
+        href=""
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Privacy Policy
+      </a>
+    </label>
+  </div>
+
+  <button class="btn btn-accent" type="submit">Send</button>
+</form>

@@ -1,0 +1,28 @@
+/* Variables styles */
+@import url('./variables/vars.css');
+
+/* Utils styles */
+@import url('./utils/animations.css');
+@import url('./utils/utils.css');
+
+/* Common styles */
+@import url('./common/reset.css');
+@import url('./common/base.css');
+@import url('./common/typography.css');
+@import url('./common/container.css');
+@import url('./common/card-set.css');
+
+/* Sections style */
+@import url('./components/buttons.css');
+@import url('./components/socials.css');
+@import url('./components/logo.css');
+@import url('./components/header.css');
+@import url('./components/hero.css');
+@import url('./components/benefits.css');
+@import url('./components/ingridients.css');
+@import url('./components/made.css');
+@import url('./components/products.css');
+@import url('./components/bestsellers.css');
+@import url('./components/reviews.css');
+@import url('./components/footer.css');
+@import url('./components/modal.css');

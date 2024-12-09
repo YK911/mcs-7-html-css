@@ -1,0 +1,52 @@
+.btn {
+  min-width: 144px;
+  min-height: 45px;
+  padding: 14px 40px;
+
+  font-size: 14px;
+  font-weight: 600;
+  color: rgb(var(--cl-white));
+  background-color: transparent;
+  border: 1px solid transparent;
+  border-radius: 100px;
+
+  /* transition: background-color 1300ms ease, color 1300ms ease,
+    border-color 1300ms ease; */
+  /* transition-property: background-color, color, border-color;
+  transition-duration: 1300ms;
+  transition-timing-function: ease; */
+
+  transition: var(--fast-trns);
+  transition-property: background-color, color, border-color;
+}
+.btn-accent,
+.btn-primary {
+  animation: move-horizontal 600ms ease calc(var(--base-delay) * var(--coef))
+    both;
+}
+.btn-accent {
+  background-color: rgb(var(--cl-accent));
+}
+.btn-accent:hover,
+.btn-accent:focus {
+  color: rgb(var(--cl-accent));
+  background-color: rgb(var(--cl-beige));
+}
+.btn-primary {
+  border-color: rgb(var(--cl-white));
+}
+.btn-primary:hover,
+.btn-primary:focus {
+  color: rgb(var(--cl-accent));
+  border-color: rgb(var(--cl-accent));
+}
+.btn-secondary {
+  font-size: 18px;
+  color: rgb(var(--cl-primary));
+  border-color: rgb(var(--cl-accent));
+}
+.btn-secondary:hover,
+.btn-secondary:focus {
+  color: rgb(var(--cl-white));
+  background-color: rgb(var(--cl-accent));
+}

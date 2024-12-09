@@ -1,0 +1,47 @@
+/* #region Made */
+.made {
+}
+.made-wrapper {
+  display: flex;
+  gap: 20px;
+}
+.made-left-side {
+  flex-shrink: 0;
+  border-radius: 15px;
+  overflow: hidden;
+}
+.made-pic {
+}
+.made-right-side {
+  padding: 32px;
+  background: rgb(var(--cl-white));
+  border-radius: 15px;
+}
+.made-subtitle {
+  margin-bottom: 28px;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.33;
+}
+.made-list {
+}
+.made-item {
+  display: flex;
+  gap: 8px;
+}
+.made-item:not(:last-child) {
+  margin-bottom: 24px;
+}
+.made-item::before {
+  content: '';
+  flex-shrink: 0;
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  margin-top: 5px;
+
+  background-color: #4c4c4c;
+  border: 2px solid #eceded;
+  border-radius: 50%;
+}
+/* #endregion */

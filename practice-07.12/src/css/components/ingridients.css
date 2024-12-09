@@ -1,0 +1,51 @@
+/* #region Ingridients */
+.ingridients {
+  padding-top: 120px;
+}
+.ingridients-list {
+  --items: 4;
+}
+.ingridients-item {
+  position: relative;
+  padding: 28px 23px;
+  border-radius: 15px;
+  border: 1px solid transparent;
+}
+/* a * n + b */
+.ingridients-item:nth-child(2n) {
+  border-color: rgb(var(--cl-accent));
+}
+.ingridients-item:nth-child(4n + 1) {
+  background: rgb(var(--cl-accent));
+  color: rgb(var(--cl-white));
+}
+.ingridients-item:nth-child(4n + 3) {
+  background: rgb(var(--cl-dark));
+  color: rgb(var(--cl-white));
+}
+.ingridients-btn {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+
+  border: none;
+  background-color: transparent;
+  padding: 0;
+}
+.ingridients-icon {
+}
+.ingridients-item:nth-child(2n + 1) .ingridients-icon {
+  stroke: rgb(var(--cl-white));
+}
+.ingridients-item:nth-child(2n) .ingridients-icon {
+  stroke: rgb(var(--cl-accent));
+}
+.ingridients-ill {
+}
+.ingridients-caption {
+  margin-top: 36px;
+  font-size: inherit;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+/* #endregion */
