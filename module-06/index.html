@@ -711,14 +711,9 @@
             </li>
           </ul>
 
-          <form class="footer-form" name="subscribtionForm">
-            <input
-              class="footer-form-input"
-              type="email"
-              name="user-email"
-              placeholder="Enter your email"
-            />
-            <button class="btn btn-accent" type="submit">Send</button>
+          <form name="subscribtionForm">
+            <input type="text" />
+            <button>Send</button>
           </form>
         </div>
       </div>
@@ -845,12 +840,12 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
       AOS.init();
-      // const inputEl = document.querySelector('input[type="range"]');
-      // const ui = document.querySelector('input[type="range"] + span');
+      const inputEl = document.querySelector('input[type="range"]');
+      const ui = document.querySelector('input[type="range"] + span');
 
-      // inputEl.addEventListener('input', event => {
-      //   ui.textContent = event.target.value;
-      // });
+      inputEl.addEventListener('input', event => {
+        ui.textContent = event.target.value;
+      });
       // const allForms = document.forms;
       // console.log('allForms:', allForms);
     </script>
